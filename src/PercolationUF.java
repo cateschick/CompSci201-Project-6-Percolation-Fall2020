@@ -12,14 +12,14 @@ public class PercolationUF implements IPercolate {
    private final int VBOTTOM;
    private int myOpenCount;
 
-    // constructor for PercolationUD
+    // constructor for PercolationUF
     /**
      * Constructs and initializes the NxN grid stored
      * in myGrid.
      * @param size
      * @param finder
      */
-    public PercolationUF (int size, IUnionFind finder) {
+    public PercolationUF (IUnionFind finder, int size) {
         // initialize grid
         myGrid = new boolean[size][size];
         myFinder = finder;
